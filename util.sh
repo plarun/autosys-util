@@ -38,7 +38,7 @@ do_action() {
 		if [[ $action == "st" ]]; then 
 			st $job_name | tail -1;
 		elif [[ $action == "stbox" ]]; then 
-			stbox $jojob_nameb | tail -1;
+			stbox $job_name | tail -1;
 		elif [[ $action == "fs" ]]; then 
 			st $job_name
 		elif [[ $action == "oi" ]]; then 
