@@ -66,7 +66,7 @@ do_action() {
 }
 
 # Prints requested JIL attributes only for jobs in the input file
-print_job_attributes() 
+print_job_attributes() {
 	check_args_count 2
 
 	attributes=$1
