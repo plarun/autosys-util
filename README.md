@@ -1,7 +1,7 @@
 # autosys-util
 
 This script is a basic util script to perform some autosys actions in command line for list of jobs.
-The list of jobs should be placed each in a line in a file named "jobs".
+The list of jobs should be placed each in a line in a file named "util_jobs".
 
 # Usage
 
