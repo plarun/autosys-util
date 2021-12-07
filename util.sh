@@ -243,3 +243,6 @@ fi
 if [[ $sub_command == "hist" ]]; then
 	print_run_history $2 $3
 fi
+
+echo "invalid subcommand"
+exit 1
