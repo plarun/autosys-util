@@ -25,25 +25,25 @@ check_args_count() {
 	n=$1
 	if [[ $n -ne $main_arg_count ]]; then
 		echo "Invalid argument count"
-		exit 1;
+		exit 1
 	fi
 }
 
 # Performs the requested job action for jobs in the input file
 do_action() {
-	check_args_count 2;
+	check_args_count 2
 
-	action=$1;
+	action=$1
 	while read job_name; do
 		if [[ $action == "st" ]]; then 
-			st $job_name | tail -1;
+			st $job_name | tail -1
 		elif [[ $action == "stbox" ]]; then 
-			stbox $job_name | tail -1;
+			stbox $job_name | tail -1
 		elif [[ $action == "fs" ]]; then 
 			st $job_name
 		elif [[ $action == "oi" ]]; then 
 			oi $job_name
-		elif [[ $action == "ofi" ]]l then 
+		elif [[ $action == "ofi" ]]; then 
 			ofi $job_name
 		elif [[ $action == "oh" ]]; then 
 			oh $job_name
