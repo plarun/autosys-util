@@ -14,7 +14,7 @@ alias ofh="sendevent -E JOB_OFF_HOLD -J"
 alias kill="sendevent -E KILLJOB -J"
 
 # File which contains input job list
-job_list = ""
+job_list = "util_jobs"
 
 dashes="------------------------------------------"
 calendar_attributes="exclude_calendar:\|run_calendar:"
